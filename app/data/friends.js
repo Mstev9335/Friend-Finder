@@ -1,7 +1,7 @@
-let friendArray = [
+let userData = [
     {
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
         "scores": [
             5,
             1,
@@ -17,7 +17,7 @@ let friendArray = [
     },
     {
         "name": "Bob",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
         "scores": [
             2,
             3,
@@ -33,7 +33,7 @@ let friendArray = [
     },
     {
         "name": "Steve",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
         "scores": [
             5,
             5,
@@ -49,7 +49,7 @@ let friendArray = [
     },
     {
         "name": "Jane",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
         "scores": [
             3,
             3,
@@ -65,7 +65,7 @@ let friendArray = [
     },
     {
         "name": "Dave",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
         "scores": [
             1,
             2,
@@ -81,7 +81,7 @@ let friendArray = [
     },
     {
         "name": "Mary",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
         "scores": [
             3,
             2,
@@ -97,4 +97,4 @@ let friendArray = [
     }
 ]
 
-module.exports = friendArray; 
+module.exports = userData; 
