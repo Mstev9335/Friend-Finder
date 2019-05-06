@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>FriendFinder</title>
+    <title>Friend Finder</title>
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -160,7 +160,6 @@
                         href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
             </div>
         </footer>
-
     </div>
 
     <!-- modal -->
@@ -189,14 +188,14 @@
             '.chosen-select': {},
             '.chosen-select-deselect': { allow_single_deselect: true },
             '.chosen-select-no-single': { disable_search_threshold: 10 },
-            '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
+            '.chosen-select-no-results': { no_results_text: 'nothing was found' },
             '.chosen-select-width': { width: "95%" }
         }
         for (var selector in config) {
             $(selector).chosen(config[selector]);
-        } 
+        }
         $("#submit").on("click", function () {
-        //    input validation
+            //    input validation
             function validateForm() {
                 var isValid = true;
                 $('.form-control').each(function () {

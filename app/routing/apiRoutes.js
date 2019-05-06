@@ -1,17 +1,16 @@
 var userData = require("../data/friends");
 
-
 // routes
-module.exports = function(app) {
+module.exports = function (app) {
 
-  app.get("/api/friends", function(req, res) {
+  app.get("/api/friends", function (req, res) {
     res.json(userData);
   });
-  var comparisonUserTotalScore = 0;
+  var comparisonUserTotal = 0;
 
   var friendScores = [];
 
-  app.post("/api/friends", function(req, res) {
+  app.post("/api/friends", function (req, res) {
     var currentUserScores = req.body.scores;
 
     console.log("Current user scores: " + currentUserScores);
@@ -20,9 +19,9 @@ module.exports = function(app) {
 
       var comparisonUserScores = userData[i].scores;
 
-      comparisonUserTotalScore = compatibility(currentUserScores, comparisonUserScores);
+      comparisonUserTotal = compatibility(currentUserScores, comparisonUserScores);
 
-      friendScores.push(comparisonUserTotalScore);
+      friendScores.push(comparisonUserTotal);
     }
 
     console.log("Array of friend scores: " + friendScores);
@@ -37,8 +36,8 @@ module.exports = function(app) {
         index = i;
       }
     }
-   
-    console.log("Best friend name: " + userData[index].name);
+
+    console.log("Match name: " + userData[index].name);
 
     res.send(userData[index]);
 
@@ -53,10 +52,9 @@ function compatibility(currentUserScores, comparisonUserScores) {
 
   for (var i = 0; i < currentUserScores.length; i++) {
 
-    totalDifference+=Math.abs(currentUserScores[i] - comparisonUserScores[i]);
+    totalDifference += Math.abs(currentUserScores[i] - comparisonUserScores[i]);
   }
 
-  console.log("Final total difference for friend: " + totalDifference);
-
+  console.log("Final total difference between current user and match: " + totalDifference);
   return totalDifference;
 };
