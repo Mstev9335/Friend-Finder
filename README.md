@@ -7,3 +7,15 @@ This application takes answers from a survey that the user takes and compares th
 * Javascript
 * Express Node Framework
 * Path Node Framework
+
+### App starts
+![start](/assets/images/friend1.png)
+
+### Survey page
+![survey](/assets/images/friend2.png)
+
+### Friend match based on survey
+![match](/assets/images/friend3.png)
+
+
+### Deployed on Heroku: [Friend Finder](https://stark-ravine-22832.herokuapp.com/)
